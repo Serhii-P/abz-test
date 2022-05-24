@@ -12,6 +12,10 @@
         align-items: center;
     }
 
+    &-logo img {
+        max-width: 104px;
+    }
+
     &-navigation {
 
         & .page-button:first-of-type {
