@@ -1,0 +1,75 @@
+@import './sass/styles.scss';
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-xl {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  @include title;
+}
+
+.text {
+  @include text;
+}
+
+.page-button {
+  background: $yellow;
+  border-radius: 80px;
+  font-size: 16px;
+  line-height: 26px;
+  color: $black;
+  padding: 4px 0;
+  width: 100px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: $light-yellow;
+  }
+}
+
+.page-button:disabled {
+  background-color: $gray;
+  color: #fff;
+}
+
+.content-button {
+  width: 120px;
+}
+
+.app-main {
+  background-color: $light-gray;
+}
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 904px;
+  }
+}
+
+@media (max-width: 910px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 710px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container {
+    max-width: 328px;
+  }
+}

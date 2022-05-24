@@ -1,0 +1,21 @@
+.header {
+    padding: 13px 0;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo a {
+        display: flex;
+        align-items: center;
+    }
+
+    &-navigation {
+
+        & .page-button:first-of-type {
+            margin-right: 10px;
+        }
+    }
+}

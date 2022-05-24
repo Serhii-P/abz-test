@@ -1,0 +1,82 @@
+@import '../../sass/styles.scss';
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  justify-content: center;
+  grid-gap: 29px;
+  
+  & .user-card {
+      background: $white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+
+      & .photo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+
+      & p:first-of-type {
+        margin: 17px 0;
+      }
+    }
+}
+
+.mailto {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  & .tooltiptext {
+    visibility: hidden;
+    max-width: 276px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px 16px;
+    z-index: 1;
+    position: absolute;
+    font-size: 14px;
+    line-height: 19px;
+    top: 21px;
+    left: 16px;
+    height: auto;
+    height: auto;
+    word-wrap: break-word;
+  }
+  
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1180px) {
+  .user-cards {
+    grid-template-columns: repeat(3, 282px);
+  }
+}
+
+@media (max-width: 910px) {
+  .user-cards {
+    grid-template-columns: repeat(2, 344px);
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: 710px) {
+  .user-cards {
+    grid-template-columns: repeat(1, 344px);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .user-cards {
+    grid-template-columns: repeat(1, 328px);
+    grid-gap: 20px;
+  }
+}
